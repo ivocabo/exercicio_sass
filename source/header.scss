@@ -1,0 +1,28 @@
+// header.scss
+@import 'mixins';
+
+header {
+    background-color: $header-bg-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        @include flex-center;
+        padding: $container-padding;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: $menu-font-weight;
+        margin-left: $menu-margin-left;
+
+        a {
+            color: $menu-link-color;
+            text-decoration: none;
+        }
+    }
+}

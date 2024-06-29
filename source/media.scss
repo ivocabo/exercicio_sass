@@ -1,0 +1,19 @@
+@media screen and (max-width: $media-max-width-tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        @include product-grid($grid-template-columns-tablet, $grid-column-gap-tablet);
+    }
+}
+
+@media screen and (max-width: $media-max-width-mobile) {
+    .products {
+        display: block;
+
+        .product-item {
+            margin-bottom: 32px;
+        }
+    }
+}

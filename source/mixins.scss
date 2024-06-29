@@ -1,0 +1,19 @@
+@mixin container {
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin product-grid($columns, $column-gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    column-gap: $column-gap;
+    row-gap: $grid-row-gap;
+    width: 100%;
+}
